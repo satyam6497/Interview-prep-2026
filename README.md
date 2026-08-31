@@ -33,17 +33,35 @@ interview-prep-2026/
 │       └── Order fulfillment & customer behavior dashboard
 │
 ├── day2/
-│   ├── window_functions.sql
-│   │   └── SQL window functions
+│   ├── sql_practice_day2_window_functions.sql
+│   │   └── Window functions: ROW_NUMBER, RANK/DENSE_RANK, LAG/LEAD, running totals, NTILE
 │   │
-│   ├── cohort_retention.py
-│   │   └── Cohort/retention analysis & funnel calculations
+│   ├── python_day2_starter.py
+│   │   └── Cohort/retention analysis, funnel math in Pandas (cross-checked against SQL)
 │   │
-│   └── ...
+│   └── powerbi_time_intelligence.pbix
+│       └── Date table + YTD/MoM measures, matrix by month x channel
+│
+├── day3/
+│   ├── build_olist_db.py
+│   │   └── Loads real Olist Kaggle CSVs into a queryable SQLite DB
+│   │
+│   ├── sql_practice_day3_olist.sql
+│   │   └── Multi-table CTEs on real data: repeat customers, on-time delivery by state,
+│   │       delivery speed vs review score, seller-level funnel
+│   │
+│   ├── python_day3_olist_starter.py
+│   │   └── Delivery performance, repeat customer rate (customer_id vs customer_unique_id
+│   │       data quality catch), revenue analysis, geography insights
+│   │
+│   └── powerbi_olist_dashboard.pbix
+│       └── Repeat Customer %, review score by delivery bucket, on-time % by state,
+│           top categories by revenue — built on real Olist data
 │
 ├── data/
-│   ├── practice_orders_with_status.csv
-│   └── practice_customers.csv
+│   ├── practice_orders_with_status.csv       # synthetic dataset, days 1-2
+│   ├── practice_customers.csv                # synthetic dataset, days 1-2
+│   └── olist/                                # NOT committed — see note below
 │
 └── README.md
 ```
